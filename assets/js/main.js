@@ -56,46 +56,98 @@ let swiperProjects = new Swiper(".projects__container", {
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById('contact-form'),
-contactName = document.getElementById('contact-name'),
-contactEmail = document.getElementById('contact-email'),
-contactMessage = document.getElementById('contact-message'),
-contactConfirm = document.getElementById('contact-confrim')
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactMessage = document.getElementById("contact-message"),
+  contactConfirm = document.getElementById("contact-confrim");
 
+const sendEmail = (e) => {
+  e.priventDefault();
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactMessage.value === ""
+  ) {
+    contactConfirm.classList.remove("color-blue");
+    contactConfirm.classList.add("color-red");
 
-const sendEmail = (e) =>{
-e.priventDefault();
-if(contactName.value === '' || contactEmail.value === '' || contactMessage.value === '' ){
-  
-  contactConfirm.classList.remove('color-blue')
-  contactConfirm.classList.add('color-red')
+    // show message
 
-  // show message
+    contactConfirm.textContent = "write all the fields";
+  } else {
+    emailjs
+      .sendForm(
+        "service_i4dv2pi",
+        "template_h88usdf",
+        "#contact-form",
+        "9QrLDrTLnP9bSdPAq"
+      )
+      .then(() => {
+        contactConfirm.classList.add("color-blue");
+        contactConfirm.textContent = "Message sent 💚";
 
-  contactConfirm.textContent = 'write all the fields'
-}else{
+        setTimeout(() => {
+          contactConfirm.textContent = "";
+        }, 5000);
+      });
+  }
+};
 
-
-  emailjs.sendForm('service_i4dv2pi','template_h88usdf','#contact-form','9QrLDrTLnP9bSdPAq')
-  .then(()=>{
-    contactConfirm.classList.add('color-blue')
-    contactConfirm.textContent = 'Message sent 💚'
-
-    setTimeout(()=>{
-      contactConfirm.textContent = ''
-    }, 5000)
-  })
-}
-}
- 
-contactForm.addEventListener('submit', sendEmail);
+contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
+// const scrollUp = () => {
+//   const scrollUp = document.getElementById("scroll-up");
+//   this.scrollY >= 350
+//     ? scrollUp.classList.add("show-scroll")
+//     : scrollUp.classList.remove("show-scroll")
 
+// };
+
+// window.addEventListener("scroll", scrollUp);
 /*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "ri-sun-line";
+
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "ri-moon-line" : "ri-sun-line";
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "ri-moon-line" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selectedTheme", getCurrentTheme);
+  localStorage.setItem("selectedIcon", getCurrentIcon);
+});
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
+const scrollHeader = () =>{
+  const header = document.getElementById('header')
+  this.scrollY >=50 ? header.classList.add('bg-header')
+                    : header.classList.remove('bg-header')
+}
+
+window.addEventListener('scroll', scrollHeader)
+
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
