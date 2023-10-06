@@ -1207,6 +1207,7 @@ font-size: var(--biggest-font-size);
 grid-template-columns: repeat(3, max-content);
 }
 /* .projects__container{
+  margin
   width: 900px;
 }
 .projects__container .swiper-button-prev,
