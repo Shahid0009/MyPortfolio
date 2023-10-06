@@ -1214,7 +1214,7 @@ grid-template-columns: repeat(3, max-content);
   font-size: 3rem;
 }
 .projects__container .swiper-button-prev{
-  left: -1rem;
+  left: -1rem;//////
 }
 .projects__container .swiper-button-next{
   right: -1rem;
