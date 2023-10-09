@@ -1,2 +1,2 @@
 This is shahid ahmed
-I am a web developer
+I am a web developer, based in Banglore
