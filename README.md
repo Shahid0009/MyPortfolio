@@ -6,3 +6,4 @@ just editing the readme file
 i did nothing
 and knoe after 4 days i did nothing and just doing simple things and commit the code
 will i do anyting in the life
+do i have a good carrier
