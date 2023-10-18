@@ -152,3 +152,16 @@ window.addEventListener("scroll", scrollHeader);
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 // const 
+
+
+// ***************** avtar animation ************************/
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('animContainer'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'U9dvbGMLza.json' // lottie file path
+})
+
+
+// 'https://assets9.lottiefiles.com/packages/lf20_5n8yfkac.json'
