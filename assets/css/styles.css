@@ -317,29 +317,28 @@ body.dark-theme {
 
 /*=============== HOME ===============*/
 
-.main__section{
+.main__section {
   display: flex;
   align-items: center;
-   flex-wrap: wrap;
-
+  flex-wrap: wrap;
 }
-.main__content{
+.main__content {
   margin-top: 30px;
 }
 
 .para {
-  color: #411BD0;
+  color: #411bd0;
   font-size: 20px;
   font-weight: 900;
 }
-.main__content h1{
-font-size: 40px;
-font-weight: bold;
- padding-bottom: 6px;
- color: var(--title-color)
+.main__content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  color: var(--title-color);
 }
 
-.main__content button{
+.main__content button {
   padding: 7px 16px;
   margin-top: 9px;
   font-weight: 500;
@@ -347,66 +346,55 @@ font-weight: bold;
   background-color: var(--body-color);
   border: 2px solid var(--text-color);
   border-radius: 4px;
-  Color: var(--text-color)
-
+  color: var(--text-color);
 }
 
-
-.about_me{
+.about_me {
   font-size: 18px;
   padding-bottom: 10px;
   line-height: 1.5;
 }
 
-.main__content h2{
+.main__content h2 {
   font-size: 40px;
   font-weight: bold;
-   /* padding-bottom: 9px */
- 
+  /* padding-bottom: 9px */
 }
 
-
-.animation{
-margin:auto;
-padding-top:10px;
+.animation {
+  margin: auto;
+  padding-top: 10px;
 }
 
-
-
-.about__section{
+.about__section {
   /* display: flex; */
   flex-wrap: wrap;
   margin: auto;
 }
 
-.content__1{
-  margin:auto;
-  margin-bottom:60px;
-  margin-top:30px;
-
+.content__1 {
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
-.content__1 p{
+.content__1 p {
   padding-bottom: 15px;
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: 400;
   /* letter-spacing: 1px; */
-
 }
 .image {
   display: flex;
   align-items: center;
   justify-content: center;
   /* justify-self: center; */
-
 }
 .image img {
-  width:250px;
-  height:270px;
+  width: 250px;
+  height: 270px;
   border-radius: 10px;
-  
 }
-
 
 .home__container {
   row-gap: 4rem;
@@ -1209,20 +1197,19 @@ padding-top:10px;
 }
 
 @media screen and (min-width: 1200px) {
-
-
-  .main__section{
+  .main__section {
     flex-wrap: nowrap;
     /* gap:200px */
+    
   }
 
-  .animation{
-width: 100%;
-height:100%
+  .animation {
+    width: 100%;
+    height: 100%;
   }
 
-  .about__section{
-flex-wrap: nowrap;
+  .about__section {
+    flex-wrap: nowrap;
   }
   .section__border {
     padding-bottom: 6rem;
@@ -1231,52 +1218,50 @@ flex-wrap: nowrap;
   .section__subtitle {
     margin-bottom: 5rem;
   }
-  .home__title{
-font-size: var(--biggest-font-size);
+  .home__title {
+    font-size: var(--biggest-font-size);
   }
 
+  .skills__container {
+    column-gap: 10rem;
+  }
+  .skills__title {
+    font-size: 3rem;
+  }
 
+  .skills__title i {
+    font-size: 1.25rem;
+  }
 
-.skills__container{
-  column-gap: 10rem;
-}
-.skills__title{
-  font-size: 3rem;
-}
+  .skils_name {
+    font-size: var(--normal-font-size);
+  }
+  .skills__info {
+    gap: 3rem;
+  }
+  .qualification__container {
+    column-gap: 14rem;
+  }
+  .qualification__title {
+    margin-bottom: 3rem;
+  }
+  .qualification__title i {
+    font-size: 1.25rem;
+  }
 
-.skills__title i{
-  font-size: 1.25rem;
-}
+  .qualification__name {
+    font-size: var(--h3-font-size);
+  }
 
-.skils_name {
-  font-size: var(--normal-font-size);
-}
-.skills__info{
-  gap: 3rem;
-}
-.qualification__container{
-  column-gap: 14rem;
-}
-.qualification__title{
-  margin-bottom: 3rem;
-}
-.qualification__title i{
-  font-size: 1.25rem;
-}
-
-.qualification__name{
-  font-size: var(--h3-font-size);
-}
-
-.qualification__img{
-  width: 300px;
-  left: -6rem;
-  bottom: 5rem;
-}
-.qualification__container{
-grid-template-columns: repeat(3, max-content);
-}
-/* .projects__container{
+  .qualification__img {
+    width: 300px;
+    left: -6rem;
+    bottom: 5rem;
+  }
+  .qualification__container {
+    grid-template-columns: repeat(3, max-content);
+  }
+  /* .projects__container{
   margin
   width: 900px;
 }
@@ -1292,22 +1277,19 @@ grid-template-columns: repeat(3, max-content);
   right: -1rem;
 }////// */
 
-.contact__title{
-margin-bottom: 3rem;
-
+  .contact__title {
+    margin-bottom: 3rem;
+  }
+  .contact__title i {
+    font-size: 1.25rem;
+  }
+  .contact__info {
+    row-gap: 3rem;
+  }
+  .contact__data-info {
+    font-size: var(--normal-font-size);
+  }
+  .contact__form {
+    row-gap: 2.5rem;
+  }
 }
-.contact__title i{
-  font-size: 1.25rem;
-}
-.contact__info{
-  row-gap: 3rem;
-}
-.contact__data-info{
-font-size: var(--normal-font-size);
-
-}
-.contact__form{
-  row-gap: 2.5rem;
-}
-}
-
