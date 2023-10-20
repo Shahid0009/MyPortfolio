@@ -358,7 +358,6 @@ body.dark-theme {
 .main__content h2 {
   font-size: 40px;
   font-weight: bold;
-  /* padding-bottom: 9px */
 }
 
 .animation {
@@ -367,13 +366,12 @@ body.dark-theme {
 }
 
 .about__section {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin-top: 50px;
 }
 
 .content__1 {
-  margin: auto;
   margin-bottom: 60px;
   margin-top: 30px;
 }
@@ -382,13 +380,9 @@ body.dark-theme {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: 400;
-  /* letter-spacing: 1px; */
 }
 .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* justify-self: center; */
+  margin: auto;
 }
 .image img {
   width: 250px;
@@ -634,6 +628,90 @@ body.dark-theme {
 /*=============== SERVICES ===============*/
 
 /*=============== PROJECTS ===============*/
+
+
+.projects__me {
+  /* padding: 2px; */
+}
+.myproject__1 {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+  padding: 2px;
+  /* margin: auto; */
+}
+.my__projectcontent {
+  /* background: pink; */
+  margin: auto;
+}
+
+.pcontent_1st_line {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.my__projectcontent h1 {
+  font-size: var(--h1-font-size);
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.my__projectcontent p {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  /* padding-bottom: 9px; */
+  line-height: 18px;
+  
+}
+
+.pcontent_about {
+  padding-bottom: 15px;
+  line-height: 1.9;
+  border-radius: 5px;
+  border: 1px solid var(--title-color);
+  padding: 10px 10px;
+  background-color: var(--container-color);
+  margin-bottom: 9px;
+  color: var(--text-color-light);
+
+}
+.techno {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  word-spacing: 10px;
+  padding-bottom: 9px;
+}
+
+.my__projectcontent span {
+  font-size: var(--font-medium);
+  cursor: pointer;
+  
+  border-radius: 4px;
+  padding: 2px 0;
+}
+
+.my__projectcontent span:hover {
+  color: #411bd0;
+}
+
+.project__link i {
+  /* background: red; */
+  font-size: 30px;
+  color: var(--title-color-light);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 9px;
+}
+
+/* .myproject__image{
+width: 100%;
+} */
+.myproject__image img {
+  width: 339px;
+  height: 200px;
+  border-radius: 10px;
+}
+
 .projects__container {
   overflow: initial;
 }
@@ -1197,10 +1275,15 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 1200px) {
+
+  .home__title{
+    font-size: var(--h1-font-size);
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
   .main__section {
     flex-wrap: nowrap;
     /* gap:200px */
-    
   }
 
   .animation {
@@ -1211,26 +1294,70 @@ body.dark-theme {
   .about__section {
     flex-wrap: nowrap;
   }
+  .content__1 {
+    width: 600px;
+  }
+  .image img {
+  }
   .section__border {
     padding-bottom: 6rem;
   }
 
+  .myproject__1 {
+    flex-wrap: nowrap;
+    border: none;
+    gap: 1rem;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+    font-weight: 900;
+  }
+
+  .projects__me{
+    margin-bottom: 4rem;
+  }
+  .myproject__image img {
+    width: 540px;
+    height: 340px;
+    border-radius: 9px;
+    filter: grayscale(60%);
+    border: 2px solid var(--title-color-light);
+  }
+
+  .myproject__image img:hover {
+    filter: none;
+    transition: all 0.3s;
+  }
+
+  .my__projectcontent {
+    width: 50%;
+  }
+
+  .pcontent_about {
+    border: 1px solid var(--title-color);
+    background-color: var(--container-color);
+    z-index: 2;
+    /* margin-bottom: 9px; */
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+
+  .techno span {
+    border: none;
+  }
   .section__subtitle {
     margin-bottom: 5rem;
   }
-  .home__title {
-    font-size: var(--biggest-font-size);
-  }
+  
 
   .skills__container {
     column-gap: 10rem;
   }
   .skills__title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .skills__title i {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
   }
 
   .skils_name {
@@ -1259,7 +1386,8 @@ body.dark-theme {
     bottom: 5rem;
   }
   .qualification__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 22rem
   }
   /* .projects__container{
   margin
@@ -1289,7 +1417,5 @@ body.dark-theme {
   .contact__data-info {
     font-size: var(--normal-font-size);
   }
-  .contact__form {
-    row-gap: 2.5rem;
-  }
+
 }
