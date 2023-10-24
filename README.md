@@ -8,4 +8,4 @@ and knoe after 4 days i did nothing and just doing simple things and commit the 
 will i do anyting in the life
 do i have a good carrier
 my life is useless
-hi hello
+hi hello welcome
