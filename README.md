@@ -10,4 +10,4 @@ do i have a good carrier
 my life is useless
 hi hello welcome to my channel
 hi
-sorry
+sorr
