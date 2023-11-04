@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Responsive portfolio website Chris - Bedimcode</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -85,7 +89,7 @@
               <h2>I build things for the web.</h2>
               <div>
                 <p class="about_me">
-                  I'm a Full-Stack Developer based in Saharanpur, India. I enjoy
+                  I'm a Full-Stack Developer based in Banglore, India. I enjoy
                   working on every aspect of web development, from the user
                   interface to the server logic.
                 </p>
@@ -108,21 +112,25 @@
             <div class="content__1">
               <h1 class="home__title">About Me</h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-                provident ipsum facere tempora, ipsam architecto suscipit! Quia
-                ipsa consequatur voluptatibus debitis ab a aperiam deleniti
-                accusamus, ratione alias deserunt dolorum?
+                I'm Shahid Ahmed, a web and software developer with a B.Tech in
+                Computer Science and Engineering. My passion lies in crafting
+                captivating websites using React.js and enhancing user
+                interfaces with Tailwind CSS. I'm dedicated to pushing the
+                boundaries of web development and bringing innovation to the
+                digital world.
               </p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, odit nisi! Veniam veritatis sint ad, consequatur
-                repellendus nisi molestiae facere
+                When I'm not coding, I'm exploring the latest tech trends,
+                working on personal projects, and maintaining a healthy
+                work-life balance. I'm open to new challenges and
+                collaborations, so let's connect and make the digital world more
+                exciting together!
               </p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-                provident ipsum facere tempora, ipsam architecto suscipit! Quia
-                ipsa consequatur voluptatibus debitis ab a aperiam deleniti
-                accusamus, ratione alias deserunt dolorum?
+                With a strong foundation in various programming languages,
+                including Python, and proficiency in managing databases with
+                SQL, along with my expertise in version control using Git and
+                GitHub, I take pride in creating user-centric web solutions.
               </p>
             </div>
 
@@ -170,7 +178,7 @@
                     alt="skills image"
                   />
                 </div>
-                <h3 class="skills__name">JAVASCRIPT</h3>
+                <h3 class="skills__name">Javascript</h3>
                 <span class="skills__subtitle">Advances</span>
               </div>
               <div class="skills__data">
@@ -182,10 +190,24 @@
               </div>
               <div class="skills__data">
                 <div class="skills__blob">
-                  <img src="assets/img/git-icon.svg" alt="skills image" />
+                  <img src="assets/img/Redux.svg" alt="skills image" />
                 </div>
-                <h3 class="skills__name">Git</h3>
-                <span class="skills__subtitle">Intermediate</span>
+                <h3 class="skills__name">Redux</h3>
+                <span class="skills__subtitle">Advances</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/figma-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Figma</h3>
+                <span class="skills__subtitle">Advances</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/tailwind.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Tailwind</h3>
+                <span class="skills__subtitle">Advances</span>
               </div>
             </div>
           </div>
@@ -198,34 +220,52 @@
             <div class="skills__info">
               <div class="skills__data">
                 <div class="skills__blob">
-                  <img src="assets/img/html-1.svg" alt="skills image" />
+                  <img src="assets/img/express.svg" alt="skills image" />
                 </div>
-                <h3 class="skills__name">HTML</h3>
-                <span class="skills__subtitle">Expert</span>
+                <h3 class="skills__name">Express js</h3>
+                <span class="skills__subtitle">Advance</span>
               </div>
               <div class="skills__data">
                 <div class="skills__blob">
-                  <img src="assets/img/css-3.svg" alt="skills image" />
+                  <img src="assets/img/sql.svg" alt="skills image" />
                 </div>
-                <h3 class="skills__name">CSS</h3>
-                <span class="skills__subtitle">Expert</span>
+                <h3 class="skills__name">SQL</h3>
+                <span class="skills__subtitle">Advance</span>
               </div>
               <div class="skills__data">
                 <div class="skills__blob">
-                  <img
-                    src="assets/img/logo-javascript.svg"
-                    alt="skills image"
-                  />
+                  <img src="assets/img/git-icon.svg" alt="skills image" />
                 </div>
-                <h3 class="skills__name">JAVASCRIPT</h3>
+                <h3 class="skills__name">GIT</h3>
                 <span class="skills__subtitle">Advances</span>
               </div>
               <div class="skills__data">
                 <div class="skills__blob">
-                  <img src="assets/img/react-2.svg" alt="skills image" />
+                  <img src="assets/img/next.svg" alt="skills image" />
                 </div>
-                <h3 class="skills__name">React</h3>
-                <span class="skills__subtitle">Advances</span>
+                <h3 class="skills__name">Next</h3>
+                <span class="skills__subtitle">intermidiate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/jest.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Jest</h3>
+                <span class="skills__subtitle">Beginner</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/nodejs-2.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Node</h3>
+                <span class="skills__subtitle">Advance</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/python.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Python</h3>
+                <span class="skills__subtitle">Advance</span>
               </div>
             </div>
           </div>
@@ -246,19 +286,26 @@
 
             <div class="qualification__info">
               <div>
-                <h3 class="qualification__name">Master In Web Developer</h3>
-                <span class="qualification__country"> Perú - University </span>
-                <span class="qualification__year"> 2014 - 2019 </span>
+                <h3 class="qualification__name">
+                  BE Computer Science and Engineering
+                </h3>
+                <span class="qualification__country"
+                  >Ghousia Collage of Engineering [VTU]
+                </span>
+                <span class="qualification__year"> 2020 - 2024 </span>
+                <h3 class="qualification__name">8.4 Cgpa</h3>
               </div>
               <div>
-                <h3 class="qualification__name">UI/UX Design</h3>
-                <span class="qualification__country"> Institute - Spain </span>
-                <span class="qualification__year"> 2017 - 2019</span>
+                <h3 class="qualification__name">12th Grade</h3>
+                <span class="qualification__country"> MMU Collage </span>
+                <span class="qualification__year">2020</span>
+                <h3 class="qualification__name">70%</h3>
               </div>
               <div>
-                <h3 class="qualification__name">Computer Engineer</h3>
-                <span class="qualification__country"> Perú - University </span>
-                <span class="qualification__year"> 2014 - 2019 </span>
+                <h3 class="qualification__name">10th Grade</h3>
+                <span class="qualification__country">MMU School</span>
+                <span class="qualification__year">2018 </span>
+                <h3 class="qualification__name">70%</h3>
               </div>
             </div>
           </div>
@@ -269,14 +316,9 @@
 
             <div class="qualification__info">
               <div>
-                <h3 class="qualification__name">Fontend Developer</h3>
-                <span class="qualification__country"> Adobe - Spain </span>
-                <span class="qualification__year"> 2014 - 2019 </span>
-              </div>
-              <div>
-                <h3 class="qualification__name">UI/UX Design</h3>
-                <span class="qualification__country"> Institute - Spain </span>
-                <span class="qualification__year"> 2017 - 2019</span>
+                <h3 class="qualification__name">Web Developer Internship</h3>
+                <span class="qualification__country"> Varcons Technology </span>
+                <span class="qualification__year">2023</span>
               </div>
             </div>
           </div>
@@ -289,8 +331,10 @@
       </section>
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
+        
+        <h2 class="section__title">Projects</h2>
+        <h2 class="section__subtitle">Some Things I've Built</h2>
         <div class="projects__me">
-          <h2 class="section__title">Some Things I've Built</h2>
           <div class="myproject__1 container">
             <div class="myproject__image">
               <img
@@ -300,12 +344,13 @@
             </div>
             <div class="my__projectcontent">
               <p class="pcontent_1st_line">Fetured project</p>
-              <h1>Halcyon Theme</h1>
+              <h1>Crypto-Details</h1>
               <p class="pcontent_about">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                earum delectus quidem nulla dicta, unde, dolorum odio atque fuga
-                officia, natus ullam earum delectus quidem nulla dicta, unde,
-                dolorum odio atque fuga officia, natus ullam
+                Dive into the World of Cryptocurrencies: Our React-powered app
+                is your all-access pass to the fascinating realm of digital
+                assets. Explore a vast array of cryptocurrencies, uncover their
+                intricate details, and gain insights into the top exchanges.
+                Experience the future of finance, right at your fingertips
               </p>
               <p class="techno">
                 <span>React</span>
@@ -317,7 +362,8 @@
               <div class="project__link">
                 <i class="ri-github-line"></i>
 
-                <i class="ri-eye-line"></i>
+                <a target="_blank" href="https://mycrypto-coins.netlify.app/">                <i class="ri-eye-line"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -383,9 +429,9 @@
           </div>
         </div>
 
-        <h2 class="section__title">Projects </h2>
+        <h2 class="section__title">Other Projects</h2>
         <span class="section__subtitle">My Recent Projects</span>
-        
+
         <div class="container section__border">
           <div class="projects__container swiper">
             <div class="swiper-wrapper">
@@ -445,24 +491,51 @@
                   </a>
                 </div>
               </div>
+              <div class="project__content swiper-slide">
+                <img
+                  src="assets/img/project4.jpg"
+                  alt="project image"
+                  class="project__img"
+                />
+                <div>
+                  <span class="projects__subtitle">App</span>
+                  <h1 class="project__title">Note Taking</h1>
+                  <a href="#" class="project__button">
+                    view demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project__content swiper-slide">
+                <img
+                  src="assets/img/project4.jpg"
+                  alt="project image"
+                  class="project__img"
+                />
+                <div>
+                  <span class="projects__subtitle">App</span>
+                  <h1 class="project__title">Note Taking</h1>
+                  <a href="#" class="project__button">
+                    view demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="swiper-button-next">
+            <!-- <div class="swiper-button-next">
               <i class="ri-arrow-right-s-line"></i>
             </div>
             <div class="swiper-button-prev">
               <i class="ri-arrow-left-s-line"></i>
-            </div>
+            </div> -->
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        
       </section>
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact</h2>
         <span class="section__subtitle">Get in Touch</span>
-        
+
         <div class="contact__container container grid section__border">
           <div class="contact__content">
             <h3 class="content__title">
@@ -501,14 +574,14 @@
             </h3>
             <form action="" id="contact-form" class="contact__form">
               <div class="contact__form-div">
-                <label for="" class="contact__form-label">Name</label>
+                <label class="contact__form-label">Name</label>
                 <input
                   type="text"
                   required
                   placeholder="Enter your name"
                   name="user_name"
                   class="contact__form-input"
-                  id="contact-name"
+                  id="fullName"
                 />
               </div>
               <div class="contact__form-div">
@@ -519,7 +592,7 @@
                   placeholder="Enter email"
                   name="user_email"
                   class="contact__form-input"
-                  id="contact-email"
+                  id="email_id"
                 />
               </div>
               <div class="contact__form-div contact__form-area">
@@ -528,14 +601,18 @@
                   name="user_message"
                   cols="30"
                   rows="10"
-                  id="contact-message"
+                  id="message"
                   required
                   placeholder="Write your message"
                   class="contact__form-input"
                 ></textarea>
               </div>
-              <p class="contact__confrim" id="contact-confirm"></p>
-              <button type="submit" class="contact__button">
+              <p class="contact__confrim" id="contact-message"></p>
+              <button
+                onclick="sendMail()"
+                type="submit"
+                class="contact__button"
+              >
                 submit <i class="ri-arrow-right-up-line"></i>
               </button>
             </form>
@@ -548,7 +625,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <h1 class="footer__title">Shahid</h1>
-        <p>Web DEveloper</p>
+        <p class="footersub__title">Web Developer</p>
         <ul class="footer__list">
           <li>
             <a href="#home" class="footer__link">Home</a>
@@ -566,10 +643,10 @@
             <i class="ri-linkedin-box-line"></i>
           </a>
           <a href="" class="footer__social-link">
-            <i class="ri-linkedin-box-line"></i>
+            <i class="ri-github-fill"></i>
           </a>
           <a href="" class="footer__social-link">
-            <i class="ri-linkedin-box-line"></i>
+            <i class="ri-twitter-fill"></i>
           </a>
         </ul>
 
@@ -593,10 +670,35 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
-    <script
+    <script>
+      function sendMail() {
+        (function () {
+          emailjs.init("9QrLDrTLnP9bSdPAq");
+        })();
+        var param = {
+          from_name: document.getElementById("fullName").value,
+          email_id: document.getElementById("email_id").value,
+          message: document.getElementById("message").value,
+        };
+
+        emailjs
+          .send("service_1v1c0ka", "template_e84zbcx", param)
+          .then((res) => {
+            alert("yes");
+          })
+          .catch();
+      }
+    </script>
+    <!-- <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <script>
+      (function () {
+        emailjs.init( "9QrLDrTLnP9bSdPAq")
+      })();
+    </script> -->
+
     <!--=============== MAIN JS ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
 

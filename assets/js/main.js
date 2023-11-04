@@ -56,45 +56,31 @@ let swiperProjects = new Swiper(".projects__container", {
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contact-form"),
-  contactName = document.getElementById("contact-name"),
-  contactEmail = document.getElementById("contact-email"),
-  contactMessage = document.getElementById("contact-message"),
-  contactConfirm = document.getElementById("contact-confrim");
+// const contactForm = document.getElementById('contact-form'),
+//   contactName = document.getElementById('contact-name'),
+//   contactEmail = document.getElementById('contact-email'),
+//   contactProject = document.getElementById('contact-project'),
+//   contactMessage = document.getElementById('contact-message')
 
-const sendEmail = (e) => {
-  e.priventDefault();
-  if (
-    contactName.value === "" ||
-    contactEmail.value === "" ||
-    contactMessage.value === ""
-  ) {
-    contactConfirm.classList.remove("color-blue");
-    contactConfirm.classList.add("color-red");
+// const sendEmail = (e) => {
+//   e.preventDefault()
+//   if (
+//     contactName.value === "" ||
+//     contactEmail.value === "" ||
+//     contactProject.value === ""
+//   ) {
+//     contactMessage.classList.remove("color-blue");
+//     contactMessage.classList.add("color-red");
 
-    // show message
+//     // show message
 
-    contactConfirm.textContent = "write all the fields";
-  } else {
-    emailjs
-      .sendForm(
-        "service_i4dv2pi",
-        "template_h88usdf",
-        "#contact-form",
-        "9QrLDrTLnP9bSdPAq"
-      )
-      .then(() => {
-        contactConfirm.classList.add("color-blue");
-        contactConfirm.textContent = "Message sent 💚";
+//     contactMessage.textContent = "write all the fields";
+//   }
+// };
 
-        setTimeout(() => {
-          contactConfirm.textContent = "";
-        }, 5000);
-      });
-  }
-};
+// contactForm.addEventListener("submit", sendEmail);
 
-contactForm.addEventListener("submit", sendEmail);
+
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -151,17 +137,33 @@ window.addEventListener("scroll", scrollHeader);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
-// const 
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 300,
+})
 
+sr.reveal(`.main__section`)
+sr.reveal(`.about__section`, { delay: '600', interval: 100, origin: 'top'})
+sr.reveal(`.content__1`, { delay: '800', interval: 100, origin: 'left'})
+sr.reveal(`.image`, { delay: '800', interval: 100, origin: 'right'})
+sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {origin: 'left'})
+sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {origin: 'right'})
+sr.reveal(`.qualification__content`, {interval: 100})
+sr.reveal(`.footer__container, .projects__container`, {delay: 400})
+sr.reveal(`.myproject__1:nth-child(1)`, {origin: 'left', delay: '400'})
+sr.reveal(`.myproject__1:nth-child(2)`, {origin: 'right', delay: '400'})
+sr.reveal(`.myproject__1:nth-child(3)`, {origin: 'left', delay: '400'})
+// const
 
 // ***************** avtar animation ************************/
 var animation = bodymovin.loadAnimation({
-  container: document.getElementById('animContainer'),
-  renderer: 'svg',
+  container: document.getElementById("animContainer"),
+  renderer: "svg",
   loop: true,
   autoplay: true,
-  path: 'U9dvbGMLza.json' // lottie file path
-})
-
+  path: "U9dvbGMLza.json", // lottie file path
+});
 
 // 'https://assets9.lottiefiles.com/packages/lf20_5n8yfkac.json'
