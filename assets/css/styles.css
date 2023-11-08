@@ -405,6 +405,13 @@ body.dark-theme {
   letter-spacing: 0.3px;
 }
 
+.resume{
+  cursor: pointer;
+  color: var(--body-font);
+}
+.resume:hover{
+  transform: translate(2);
+}
 /* .home__profile img {
   width: 150px;
 }
@@ -624,6 +631,11 @@ body.dark-theme {
   -o-transform: rotate(15deg);
 }
 
+.qualification__work{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
 /*=============== SERVICES ===============*/
 
 /*=============== PROJECTS ===============*/
@@ -669,7 +681,6 @@ body.dark-theme {
   padding: 10px 10px;
   background-color: var(--container-color);
   margin-bottom: 9px;
-  color: var(--text-color-light);
 }
 .techno {
   font-size: var(--small-font-size);
@@ -691,7 +702,6 @@ body.dark-theme {
 }
 
 .project__link i {
-  /* background: red; */
   font-size: 30px;
   color: var(--title-color-light);
   margin-left: 5px;
@@ -699,9 +709,14 @@ body.dark-theme {
   padding-bottom: 9px;
 }
 
-/* .myproject__image{
-width: 100%;
-} */
+.project__link a{
+  list-style: none;
+  color: var(--title-color-light);
+}
+.project__link a:hover{
+ translate: x;
+}
+
 .myproject__image img {
   width: 339px;
   height: 200px;
@@ -711,9 +726,6 @@ width: 100%;
 .project__content {
   display: flex;
   flex-direction: column;
-  /* margin-left: 12px;
-margin-right: 12px; */
-  /* justify-content: center; */
 }
 
 .project__img {
@@ -786,9 +798,7 @@ margin-right: 12px; */
   background-color: var(--title-color);
 }
 
-/*=============== TESTIMONIAL ===============*/
 
-/* Swiper class */
 
 /*=============== CONTACT ===============*/
 
@@ -954,7 +964,7 @@ margin-right: 12px; */
   font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
 }
-.footersub__title{
+.footersub__title {
   margin-bottom: 0.5rem;
 }
 
