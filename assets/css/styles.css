@@ -388,6 +388,15 @@ body.dark-theme {
   width: 250px;
   height: 270px;
   border-radius: 10px;
+  filter: blur(0.5px);
+}
+.links {
+  color: #411bd0;
+  font-weight: 900;
+  
+}
+.image img:hover{
+  filter: none;
 }
 
 .home__container {
@@ -405,67 +414,13 @@ body.dark-theme {
   letter-spacing: 0.3px;
 }
 
-.resume{
+.resume {
   cursor: pointer;
   color: var(--body-font);
 }
-.resume:hover{
+.resume:hover {
   transform: translate(2);
 }
-/* .home__profile img {
-  width: 150px;
-}
-
-.home__shape-wawes,
-.home__shape-circle {
-  position: absolute;
-  opacity: 0.1;
-}
-
-.home__shape-wawes {
-  width: 50px;
-  left: -1.5rem;
-  top: 5rem;
-}
-
-.home__social {
-  justify-self: center;
-  display: flex;
-  column-gap: 1.25rem;
-}
-
-.home__social-links {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-  transition: color 0.3s;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -ms-transition: color 0.3s;
-  -o-transition: color 0.3s;
-}
-
-.home__social-links:hover {
-  color: var(--title-color);
-}
-
-.home__info {
-  display: grid;
-  row-gap: 2rem;
-}
-
-.home__info-title {
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: 500;
-  color: var(--text-color);
-}
-
-.home__info-description {
-  font-family: var(--title-font);
-  color: var(--title-color);
-  padding-right: 4rem;
-} */
-
 /*=============== SKILLS ===============*/
 
 .skills__container {
@@ -631,7 +586,7 @@ body.dark-theme {
   -o-transform: rotate(15deg);
 }
 
-.qualification__work{
+.qualification__work {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
@@ -709,12 +664,12 @@ body.dark-theme {
   padding-bottom: 9px;
 }
 
-.project__link a{
+.project__link a {
   list-style: none;
   color: var(--title-color-light);
 }
-.project__link a:hover{
- translate: x;
+.project__link a:hover {
+  translate: x;
 }
 
 .myproject__image img {
@@ -797,8 +752,6 @@ body.dark-theme {
 .projects__container .swiper-pagination-bullet-active {
   background-color: var(--title-color);
 }
-
-
 
 /*=============== CONTACT ===============*/
 
